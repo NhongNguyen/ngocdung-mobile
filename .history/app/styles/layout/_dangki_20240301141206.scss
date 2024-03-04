@@ -1,0 +1,93 @@
+.quote{
+  background-color: $gray-color;
+  &-container{
+    @include flexBox(center,space-between);
+    padding:70px 0px;
+  }
+  &-arrow{
+    font-size: 24px;
+    color:$button-color;
+    cursor:pointer;
+    padding:10px 23px;
+  }
+  &-icon{
+    @include size(150px);
+    @include flexBox(center,center);
+    border: 3px solid $third-color;
+    flex-shrink: 0; 
+  }
+  @include minWidth(768px){
+    .quote-info{
+      padding-left:60px;
+    }
+  }
+  &-item{
+    @include flexBox(center);
+    padding-left:55px;
+    padding-right:55px;
+  }
+  &-image{
+    margin:42px;
+    @include size(63px,60px);
+  }
+  &-image-people{
+    @include size(220px, 220px);
+    border-radius: 1000px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  &-desc{
+    line-height: 1.6;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: $secondary-font;
+    font-style: italic;
+    margin-bottom: 25px;
+    color:$text-color;
+    @include textClamp(3);
+  }
+  &-arthor{
+    font-family: $third-font;
+    font-size: 24px;
+    position: relative;
+    padding-left:70px;
+  }
+  &-arthor:before{
+    content: "";
+    @include size(60px,3px);
+    background-color: $primary-color;
+    position: absolute;
+    @include absoluteCenter("top");
+    left:0;
+  }
+  .slick-initialized .slick-slide{
+    display:flex;
+  }
+  .slick-arrow{
+    background-color: transparent;
+    border: 0;
+    font-size: 24px;
+    color:$button-color;
+    cursor:pointer;
+    padding:10px 23px;
+  }
+  @include maxWidth(767px){
+    &-item{
+      flex-direction: column;
+    }
+    &-arrow{
+      display: none;
+    }
+    &-icon{
+      @include size(100px);
+      &-image{
+        max-width: 50%;
+      }
+    }
+  }
+  @include maxWidth(374px){
+    &-arthor {
+      font-size: 21px;
+    }
+  }
+}

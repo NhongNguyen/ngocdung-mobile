@@ -1,0 +1,34 @@
+block mixins
+	include ../blocks/mixins
+block vars
+	-title = 'Site'
+	-bodyClass = ''
+
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		link (rel="preconnect" href="https://fonts.googleapis.com">
+		link (rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+		title= title
+		link(rel="stylesheet", href="./styles/reset.css")
+		link(rel="stylesheet", href="./styles/fontawesome.css")
+		link(rel="stylesheet", href="./styles/styles.css")
+	body(class=bodyClass)
+		.wrapper
+			block header
+				include ../blocks/header
+			block container
+				include ../blocks/tuvan
+				include ../blocks/datlich
+				include ../blocks/dangki
+				include ../blocks/camket
+				include ../blocks/review
+				include ../blocks/truyenthong
+			block footer
+				include ../blocks/footer
+			block script
+				include ../blocks/scripts

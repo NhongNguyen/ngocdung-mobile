@@ -1,0 +1,34 @@
+.footer .container{
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 4660px;
+  z-index: 14;
+}
+.footer-logo{
+  padding: 10px 125px;
+}
+.footer-text{
+  color:$third-color;
+  &-time{
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+  &-link{
+    color: $fourth-color;
+    font-weight: bold;
+    font-size:15px;
+  }
+  &-hotline{
+    font-weight: bold;
+    font-size: 18px;
+  }
+  &-number{
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 0.1px;
+    display: flex;
+    justify-content: ;
+  }
+}

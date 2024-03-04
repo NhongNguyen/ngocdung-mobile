@@ -1,0 +1,10 @@
+mixin quoteItem(src="../images/img-quote.png",type=false,arthor="Jon Doe", desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua")
+	.quote-item
+		if type == false
+			.quote-icon 
+				img(src=src).quote-image
+		else
+			img(src=src).quote-image-people
+		.quote-info 
+			p.quote-desc= desc
+			span.quote-arthor= arthor

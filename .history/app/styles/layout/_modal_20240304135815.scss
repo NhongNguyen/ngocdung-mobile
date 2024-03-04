@@ -1,0 +1,31 @@
+.modal .container{
+  height:100%;
+  top:0;
+  text-align: center;
+  position: fixed;
+  overflow: auto;
+  left:0;
+  right: 0;
+  z-index: 15;
+  width: 100%;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-background-top{
+  position: relative;
+  @include size(350px,350px);
+  margin: 0 auto;
+}
+.modal-background{
+  position: absolute;
+  z-index: -1;
+  margin-top: -200px;
+  height: 550px;
+  width: 100%;
+  padding: 0px 10px;
+}
+.modal-list-btn{
+  z-index: 20;
+  margin-top: -70px;
+}
+

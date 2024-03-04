@@ -1,0 +1,20 @@
+.header .container{
+  height: 2000px;
+  background: url("../images/background/background-1.png")no-repeat;
+  background-size: 420px;
+}
+.header-list-btn{
+  padding:calc(490px + 20px) 45px 0px;
+}
+.list-item-btn:not(:last-child){
+  margin-bottom: 8px;
+}
+.list-item-btn{
+  border-radius: 40px;
+  width: 330px;
+
+}
+
+.header-btn-submit{
+  width:205px;
+}

@@ -1,0 +1,11 @@
+.modal .container{
+  background: url("../images/modal/background.png") no-repeat;
+  background-size: 380px;
+  top:0;
+  text-align: center;
+  position: fixed;
+  overflow: auto;
+  left:0;
+  right:0;
+  z-index: 15;
+}

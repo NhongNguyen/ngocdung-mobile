@@ -1,0 +1,33 @@
+.tuvan .container{
+  background : url("../images/background/background-2.png") no-repeat;
+  background-size: 420px;
+  height: 480px;
+}
+.tuvan-img{
+  padding: 35px 0px 15px;
+}
+.tuvan-img-text-item-co-hoi{
+  padding: 0px 110px 15px;
+}
+.tuvan-img-text-item-khuyet-diem{
+  padding: 0px 30px 12px;
+}
+.tuvan-img-text-item-dong-hanh{
+  padding: 0px 35px 11px;
+}
+.tuvan-img-text-item-tinh-trang{
+  padding: 0px 40px 0px;
+}
+.tuvan-btn{
+  border: hidden;
+  border-radius: 30px;
+  color: $primary-color;
+  background-color: $background-color-btn;
+  padding:6px 18px;
+  display: inline-flex;
+  align-self: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-weight: bold;
+
+}

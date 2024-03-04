@@ -1,0 +1,191 @@
+.review .container{
+  background : url("../images/review/background.png") no-repeat;
+  background-size: 420px;
+  height:850px;
+  text-align: center;
+  position: absolute;
+  left:0;
+  right:0;
+  margin-top:3220px;
+  z-index: 11;
+}
+.review-text{
+  color:$primary-color;
+  margin-bottom:25px;
+  &-large{
+    margin-top:45px;
+    font-weight: bold !important;
+    font-size:22px;
+    padding:0px 50px;
+  }
+  &-small{
+    font-size: 16px;
+    padding:0px 30px;
+  }
+}
+.review-carousel{
+  margin-bottom:48px;
+  display:flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  &-img{
+    padding:0px 35px;
+    
+  }
+}
+.review-review-carousel{
+  display: flex;
+
+}
+.review-review{
+  height:340px;
+  background-color: $background-color-box-review;
+  color:$primary-color;
+  &-text{
+    font-weight: bold;
+    padding:30px 104px;
+    font-size: 22px;
+  }
+  &-box{
+    height:220px;
+    margin:0px 20px;
+    padding-left:35px;
+    background-color: $third-color;
+    border-radius: 30px;
+    &-header{
+      display: flex;
+      justify-content: space-between;
+    }
+    &-text{
+      display: flex;
+      margin-top:25px;
+      align-items: end;
+      &-avatar{
+        width: 42px;
+        height:42px;
+      }
+      &-text{
+        margin-left:13px;
+        text-align: start;
+        &-name{
+          font-weight: bold;
+          font-size:14px;
+        }
+        &-age{
+          font-size:12px;
+        }
+      }
+    }
+    &-icon{
+      margin-right:28px;
+      width:55px;
+      height:58px;
+    }
+    &-star{
+      display: flex;
+      margin:15px 0px 0px;
+      &-item{
+        margin-right:7px;
+        width: 18px;
+        height: 18px;
+      }
+    }
+    &-text{
+      text-align: start;
+      margin-right:70px;
+    }
+  }
+}
+.review-btn{
+  width: 180px;
+  margin: 18px 0px;
+  padding: 2px 25px;
+  border: none;
+  border-radius:30px;
+  color:$primary-color;
+  font-weight: 600;
+  background-color: $background-color-btn;
+  font-size:18px; 
+}
+@include maxWidth(424px){
+  .review .container{
+    background-size: 380px;
+    height:850px;
+    margin-top:3020px;
+  }
+  .review-text{
+    margin-bottom:20px;
+    &-large{
+      padding:0px 30px;
+    }
+    &-small{
+      padding:0px 20px;
+    }
+  }
+  .review-review{
+    height:340px;    
+    &-text{
+      padding:30px 70px;
+    }
+    &-box{
+      margin:0px 10px;
+    }
+  }
+}
+@include maxWidth(374px){
+  .review .container{
+    background-size: 320px;
+    height:850px;
+    margin-top:2700px;
+  }
+  .review-text{
+    margin-bottom:20px;
+    &-large{
+      padding:0px 10px;
+      font-size: 20px;
+    }
+    &-small{
+      padding:0px 5px;
+      font-size: 15px;
+    }
+  }
+  .review-review{
+    height:340px;    
+    &-text{
+      padding:30px 50px;
+      font-size: 15px;
+    }
+    &-box{
+      height:220px;
+      margin:0px 10px;
+      &-text{
+        margin-top:25px;
+        &-avatar{
+          width: 30px;
+          height:30px;
+        }
+        &-text{
+          margin-left:13px;
+          text-align: start;
+          &-name{
+            font-weight: bold;
+            font-size:14px;
+          }
+          &-age{
+            font-size:12px;
+          }
+        }
+      }
+      &-icon{
+        margin-right:28px;
+        width:55px;
+        height:58px;
+      }
+      &-text{
+        text-align: start;
+        margin-right:70px;
+      }
+    }
+  }
+}
